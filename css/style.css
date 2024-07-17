@@ -410,7 +410,12 @@ a.active {
     overflow: hidden;
 }
 
-
+.pc{
+    display: block;
+    width: 100%;
+    min-width: 1920px;
+    margin: auto;
+}
 
 .mobile {
     display: none;
