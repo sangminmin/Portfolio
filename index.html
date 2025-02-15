@@ -296,21 +296,46 @@
 
     <div class="popup pop4">
         <div>
-            <img src="./img/anglepoise_1.jpg" alt="이미지">
+            <div class="swiper-container slide">
+                <div class="swiper-wrapper">
+                    <!-- 첫 번째 슬라이드 (이미지) -->
+                    <div class="swiper-slide">
+                        <img src="./img/anglepoise_1.jpg" alt="첫 번째 이미지">
+                    </div>
+    
+                    <!-- 두 번째 슬라이드 (영상) -->
+                    <div class="swiper-slide">
+                        <video class="popup-video" controls>
+                            <source src="./img/anglepoise_video.mp4" type="video/mp4">
+                            브라우저가 video 태그를 지원하지 않습니다.
+                        </video>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- 닫기 버튼 -->
             <a href="#none"><i class="ion-close-round"></i></a>
         </div>
     </div>
 
+    <div id="popup" class="popup">
+        <span id="closeBtn" class="close">X</span>
+        <video id="popupVideo" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <div class="popup pop5">
         <div>
             <div class="swiper-container slide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./img/a1.jpg" alt="배너1">
-                    </div>
-                   
-
+                <div class="swiper-slide">
+                    <img src="./img/a1.jpg" alt="배너1">
                 </div>
             </div>
             <!-- 화살표 버튼 -->
@@ -318,10 +343,12 @@
             <div class="swiper-button-prev"></div>
             <!-- 블릿 버튼 -->
             <div class="swiper-pagination"></div>
-
+    
+            <!-- 닫기 버튼 추가 -->
             <a href="#none"><i class="ion-close-round"></i></a>
         </div>
     </div>
+    
 
     <div class="popup pop6">
         <div class="pop6">
@@ -424,16 +451,16 @@
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
                         <label class="timeline-event-icon"></label>
                         <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2021.06</p>
+                            <p class="timeline-event-thumbnail">2021.12</p>
                             <h3>제 26회 국제디자인트렌드대전 특선
                             </h3>
-                            <p class="exp">알맹상점: 리플렛 디자인</p>
+                            <p class="exp">맞춤형 식물 추천 Plantfit: 앱 리디자인</p>
                         </div>
                     </li>
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
                         <label class="timeline-event-icon"></label>
                         <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2022.06</p>
+                            <p class="timeline-event-thumbnail">2022.07</p>
                             <h3>제 27회 국제디자인트렌드대전 입선
                             </h3>
                             <p class="exp">봉구스 밥버거: 브랜드 리디자인
@@ -444,7 +471,7 @@
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
                         <label class="timeline-event-icon"></label>
                         <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2023.06</p>
+                            <p class="timeline-event-thumbnail">2022.12</p>
                             <h3>제 28회 국제디자인트렌드대전 특선
                             </h3>
                             <p class="exp">츄잉 플래이크 브랜드 varyday: 패키지 디자인
