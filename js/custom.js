@@ -167,5 +167,24 @@ $(document).ready(function () {
         },
     });
 
+    var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoHeight: true,  // 슬라이드 높이를 자동 조절
+    });
+});
 
+document.getElementById("closeBtn").addEventListener("click", function() {
+    let video = document.getElementById("popupVideo");
+    video.pause();  // 영상 일시정지
+    video.currentTime = 0;  // 영상 처음으로 되감기
+    document.getElementById("popup").style.display = "none";  // 팝업 닫기
 });
