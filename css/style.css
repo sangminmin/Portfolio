@@ -631,6 +631,21 @@ a.active {
     overflow: hidden;
 }
 
+.swiper-slide {
+    display: flex;  /* 요소 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 슬라이드 너비를 고정 */
+    height: 100%;
+}
+
+.popup-video {
+    max-width: 90%; /* 가로 최대 90% */
+    max-height: 90vh; /* 화면 높이에 맞게 조정 */
+    width: auto;
+    height: auto;
+}
+
 .slide .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1014,7 +1029,7 @@ p {
     }
 
     .title1 {
-        font-size: 70px;
+        font-size: 65px;
     }
 }
 
